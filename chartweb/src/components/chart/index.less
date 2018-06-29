@@ -1,0 +1,59 @@
+.chart{
+    background: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    .messageBox{
+        padding: 0 10px 20px 10px;
+        flex: 1;
+        overflow-y: scroll;
+    }
+    .messageContent{
+        overflow: hidden;
+        .infoBox{
+            display: flex;
+            flex-direction: row;
+            padding: 0 10px;
+            margin: 10px 0;
+            .user{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: rgb(139, 37, 165);
+                color: white;
+                line-height: 30px;
+                text-align: center;
+                overflow: hidden;
+            }
+            .message{
+                border-radius: 8px;
+                padding: 5px 10px;
+                margin: 10px 0 0 10px;
+                background-color: wheat;
+                flex: 1;
+                span{
+                    font-size: 12px;
+                }
+            }
+        }
+        .aboutMe{
+            float: right;
+            .user{
+                background-color: red;
+            }
+            .message{
+                margin: 10px 10px 0 0;
+            }
+        }
+    }
+    .bottom{
+        height: 48px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-between;
+    }
+}
